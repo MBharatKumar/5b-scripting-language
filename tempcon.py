@@ -25,3 +25,22 @@ while(m==1):
 	else:
 		print ("you have entered a wrong input ")
 	m=int(input("press 1 if you want to do some more conversions or press 0 to exit "))#taking input to continue or exit
+	
+	#Farenheit to celcius 
+	#celcius=(temp-32)*(5/9)
+
+	#Farenheit to kelvin
+	#kelvin=(temp-32)*(5/9)+273
+
+	#celcius to kelvin
+	#kelvin=temp+273
+
+	#celcius to farenheit
+	#faren=(9/5)*(temp)+32
+
+	#kelvin to farenheit
+	#faren=(9/5)*(temp+273)+32
+
+	#kelvin to celcius
+	#celcius=(temp-273)
+	
