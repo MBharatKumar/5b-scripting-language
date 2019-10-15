@@ -2,20 +2,15 @@
 #minus the duplicates (Use functions). Use one-line comprehensions of create a new list of 28 even numbers. 
 #Create another list reversing the elements. 
 
-l1 = []
 
-#1a)
-def create_list():
-    for i in range(5):
-        l1.append(input())
-
-def remdup():
-    return list(set(l1))
-
-create_list()
-print(remdup())
-
-print([ i for i in range(28) if i%2 == 0])
-
-l3 = ["This","is","XYZ","Here"]
-print(l3[::-1])
+list1=[]
+size=int(input("Enter the size : "))
+for i in range(size):
+    list1.append(input("Element : "))
+mydict=dict.fromkeys(list1);
+list2=list(mydict)
+print(list2)
+list3=[x for x in range(56) if x%2==0]
+print(list3)
+list4=list3[::-1]
+print(list4)
