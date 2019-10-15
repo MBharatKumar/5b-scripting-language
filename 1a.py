@@ -7,9 +7,12 @@ list1=[]
 size=int(input("Enter the size : "))
 for i in range(size):
     list1.append(input("Element : "))
-mydict=dict.fromkeys(list1);
-list2=list(mydict)
-print(list2)
+def remdup(list1):
+	mydict=dict.fromkeys(list1);
+	list2=list(mydict)
+	print(list2)
+
+remdup(list1)
 list3=[x for x in range(56) if x%2==0]
 print(list3)
 list4=list3[::-1]
