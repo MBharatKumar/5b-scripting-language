@@ -18,9 +18,10 @@ if(sys.argv[1].split('.')[-1] != "txt"):
 	sys.exit()
 
 with open(sys.argv[1]) as file:
-	for line in file:
-		for word in line.split():
-			dict[word] = dict.get(word,0) + 1
-
-for i in dict:
-    print (i,"->",dict[i])
+	content=file.read()
+	mylist=content.split()
+	mydict=dict.fromkeys(mylist)
+	#print(mydict)
+	olist=list(mydict)
+	for i in range(len(olist)):
+    		print("Frequency of ",olist[i]," : ",mylist.count(olist[i]))
