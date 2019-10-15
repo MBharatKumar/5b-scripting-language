@@ -3,18 +3,17 @@
 #The program should run as long as the user wishes so. Provide an option to view the conversions stored as list of tuples with 
 #attributes - from unit value, to unit value sorted by the user‟s choice (from-value or to-value). 
 
-#define a function to convert far to cel
-def FarenToCelcius():#defining function
-	temp=int(input("please enter the farenheit temprature to convert it into celcius"))#taking input in int
-	celcius=(temp-32)*(5/9)#eqution to convert into far
-	print("the corresponding celcius temprature is ",celcius)#print result
-	return#returns to where it is called
-#define a function to convert far to cel
-def CelciusToFaren():#defining function
-	temp=int(input("please enter the celcius temprature to convert it into Farenheit"))#taking input in int
-	faren=(9/5)*(temp)+32#eqution to convert into cel
-	print("the corresponding celcius temprature is ",faren)#print result
-	return#returns to where it is called
+def FarenToCelcius():
+	temp=int(input("please enter the farenheit temprature to convert it into celcius"))
+	celcius=(temp-32)*(5/9)
+	print("the corresponding celcius temprature is ",celcius)
+	return
+
+def CelciusToFaren():
+	temp=int(input("please enter the celcius temprature to convert it into Farenheit"))
+	faren=(9/5)*(temp)+32
+	print("the corresponding celcius temprature is ",faren)
+	return
 
 m=1
 while(m==1):
@@ -22,14 +21,14 @@ while(m==1):
 	print ("MENU")
 	print ("1.Farenheit to celcius ")
 	print ("2.celcius to farenheit ")
-	choice=int(input("choose from the following options"))#taking input for choice
+	choice=int(input("choose from the following options"))
 	if(choice==1):
-		FarenToCelcius()#function call
+		FarenToCelcius()
 	elif(choice==2):
-		CelciusToFaren()#function call
+		CelciusToFaren()
 	else:
 		print ("you have entered a wrong input ")
-	m=int(input("press 1 if you want to do some more conversions or press 0 to exit "))#taking input to continue or exit
+	m=int(input("press 1 if you want to do some more conversions or press 0 to exit "))
 	
 	#Farenheit to celcius 
 	#celcius=(temp-32)*(5/9)
