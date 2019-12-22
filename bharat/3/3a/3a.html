@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>author details</title>
+    </head>
+    <body>
+        <script>
+            var author = [
+        {
+            "name":"bharat",
+            "country":"kumta",
+            "title":"photography",
+            "year":"1999"
+        },
+        {
+           
+            "name":"deepthi",
+            "country":"kundapura",
+            "title":"computres",
+            "year":"2000" 
+        },
+        {
+            
+            "name":"prajwal",
+            "country":"hampi",
+            "title":"traveling",
+            "year":"2005"
+        },
+        {
+            
+            "name":"madhura",
+            "country":"chickamagaluru",
+            "title":"fashion",
+            "year":"2011"
+        }
+    ];
+     for(i=0;i<2;i++){
+        document.write("<table border=1>");
+        document.write("<tr><th>name<th><td>"+author[i].name+"</td></tr>");
+        document.write("<tr><th>country<th><td>"+author[i].country+"</td></tr>");
+        document.write("<tr><th>title<th><td>"+author[i].title+"</td></tr>");
+        document.write("<tr><th>year<th><td>"+author[i].year+"</td></tr>");
+        document.write("</table>");
+        document.write("<br><br>");
+     }
+
+     for(i=2;i<4;i++){
+        document.write("<p>  name  "+author[i].name+"  country  "+author[i].country+"  title  "+author[i].title+"  year  "+author[i].year+"</p>");
+        document.write("<br><br>");
+     }
+        </script>
+    </body>>
+</html>

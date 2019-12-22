@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>items</title>
+    </head>
+
+    <body>
+        <fieldset>
+            <legend>item details</legend>
+            <input type="text" id="itemname" required><br><br>
+            <select id="itemprize" required>
+                <option value="300">300</option>
+                <option value="500">500</option>
+                <option value="700">700</option>
+            </select><br><br>
+            <input type="number" id="itemqty" required><br><br>
+            <button type="submit" value="submit" onclick="cal()">submit</button>
+        </fieldset>
+
+        <h2>total amount:</h2>
+        <p id="res"></p>
+        <button id="paid" onclick="disp()" disabled>paid</button>
+        <script>
+            function cal() {
+                document.getElementById('res').innerHTML = parseInt(document.getElementById('itemqty').value)*parseInt(document.getElementById('itemprize').value)
+                document.getElementById('paid').disabled=false
+            }
+
+            function disp() {
+                alert("paid  "+document.getElementById('res').innerHTML)
+                document.getElementById('paid').disabled=true
+            }
+        </script>
+    </body>
+</html>
