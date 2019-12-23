@@ -16,7 +16,7 @@ def store():
                 session[item] += int(request.form[item])
         return redirect(url_for("cart"))
 
-@app.route("/cart",methods=("GET","POST"))
+@app.route("/cart",methods=["GET","POST"])
 def cart():
     cart=[]
     for item in ["milk","eggs","bread"]:
