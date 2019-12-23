@@ -3,7 +3,7 @@ from flask import Flask, redirect, render_template, request, url_for, session
 app = Flask(__name__)
 app.secret_key = "secret"
 
-@app.route("/",methods=("GET","POST"))
+@app.route("/",methods=["GET","POST"])
 def store():
     if request.method == "GET":
         return render_template("store.html")
@@ -14,7 +14,7 @@ def store():
                 session[item] = int(request.form[item])
             else:
                 session[item] += int(request.form[item])
-            return redirect(url_for("cart"))
+        return redirect(url_for("cart"))
 
 @app.route("/cart",methods=("GET","POST"))
 def cart():
