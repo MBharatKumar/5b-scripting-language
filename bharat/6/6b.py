@@ -5,10 +5,7 @@ class rev:
         self.sentence=sentence
     def rever(self):
         temp=""
-        temparr=[]
-        temparr=self.sentence.split(" ")
-        for i in temparr:
-            temp=temp+i+" "
+        temp="  ".join(reversed(self.sentence.split(" ")))
         count=0
         for i in range(0,len(temp)):
             ch=temp[i]
